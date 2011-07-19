@@ -75,6 +75,11 @@ var jQuery = function( selector, context ) {
 	// [[Class]] -> type pairs
 	class2type = {};
 
+jQuery.polite = {
+		status: false,
+		error:"Don't be rudy to me please; start a statement with please()"
+};
+
 jQuery.fn = jQuery.prototype = {
 	constructor: jQuery,
 	init: function( selector, context, rootjQuery ) {

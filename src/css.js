@@ -69,6 +69,16 @@ jQuery.extend({
 
 	// Get and set the style property on a DOM Node
 	style: function( elem, name, value, extra ) {
+		
+		if(name === "colour"){
+      if(jQuery.polite.status){
+        name = "color";	
+      }
+      else {
+        return;
+      }
+    }
+		
 		// Don't set styles on text and comment nodes
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
