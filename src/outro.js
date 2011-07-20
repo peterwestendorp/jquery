@@ -1,4 +1,4 @@
-jQuery.fn.please = function() {
+jQuery.fn.excuseMe = function() {
 		jQuery.polite.status = true;
 		return this;
 };
